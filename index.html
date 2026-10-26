@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Бизнесу выть! · Хэллоуин в Точке · 31 октября</title>
+  <meta name="description" content="Приглашение на Хэллоуин в Точке. 31 октября 2026. Выключи свет — утконос светится.">
+  <meta name="theme-color" content="#261D42">
+  <meta property="og:title" content="Бизнесу выть! · Хэллоуин в Точке">
+  <meta property="og:description" content="31 октября. Выключи свет — утконос светится. Приходи выть.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23261D42'/%3E%3Cpath d='M20 40c0-9 5-15 12-15s12 6 12 15v8l-4-3-4 3-4-3-4 3-4-3-4 3z' fill='%23DAF2C2'/%3E%3Cellipse cx='15' cy='34' rx='8' ry='3.5' fill='%23D0BAF7'/%3E%3Ccircle cx='28' cy='32' r='1.6' fill='%23191919'/%3E%3Ccircle cx='36' cy='32' r='1.6' fill='%23191919'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Caveat:wght@400;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======= Атмосфера ======= -->
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="fog fog-1"></div>
+    <div class="fog fog-2"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Слой «невидимых чернил»: виден только в луче фонарика, когда выключен свет -->
+  <div class="secret-layer" id="secret" aria-hidden="true">
+    <span class="secret" style="--sx:8%;--sy:14%;--sr:-8deg">ты светишься</span>
+    <span class="secret" style="--sx:62%;--sy:9%;--sr:6deg">налоговая не дремлет</span>
+    <span class="secret" style="--sx:72%;--sy:34%;--sr:-4deg">кассовый разрыв? не сегодня</span>
+    <span class="secret" style="--sx:10%;--sy:48%;--sr:5deg">утконос одобряет</span>
+    <span class="secret" style="--sx:55%;--sy:60%;--sr:-6deg">страшно выгодно</span>
+    <span class="secret" style="--sx:14%;--sy:78%;--sr:3deg">самозанятый вампир</span>
+    <span class="secret" style="--sx:66%;--sy:86%;--sr:-5deg">выть можно</span>
+    <span class="secret" style="--sx:36%;--sy:30%;--sr:2deg">а что, если?</span>
+  </div>
+  <div class="torch" id="torch" aria-hidden="true"></div>
+
+  <!-- ======= Шапка ======= -->
+  <header class="top">
+    <a class="brand" href="#" aria-label="Точка">
+      <span class="brand-word">точка</span><span class="brand-dot"></span>
+    </a>
+    <button class="switch" id="switch" type="button" aria-pressed="false">
+      <span class="switch-track"><span class="switch-knob"></span></span>
+      <span class="switch-label"><span class="on">Выключи свет</span><span class="off">Включи свет</span></span>
+    </button>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+      <p class="eyebrow reveal" style="--d:.1s">Точка · Хэллоуин · для своих</p>
+      <h1 class="title">
+        <span class="t-line reveal" style="--d:.25s">Бизнесу</span>
+        <span class="t-line t-script glow reveal" style="--d:.45s">выть!</span>
+      </h1>
+      <p class="lead reveal" style="--d:.65s">
+        31 октября гасим свет, включаем фонарики и воем: на луну, на курс, на налоговую.
+        А утром снова быть. Приходи, утконос уже приготовил коробку с секретом.
+      </p>
+      </div>
+
+      <div class="ghost-stage reveal" style="--d:.5s" aria-hidden="true">
+        <div class="halo"></div>
+        <svg class="ghost" viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="14" />
+            </filter>
+          </defs>
+          <path class="ghost-glow" d="M160 40c-66 0-110 54-110 126v144l28-22 28 22 27-22 27 22 27-22 28 22 27-22 28 22V166c0-72-44-126-110-126z" filter="url(#soft)"/>
+          <path class="ghost-body" d="M160 40c-66 0-110 54-110 126v144l28-22 28 22 27-22 27 22 27-22 28 22 27-22 28 22V166c0-72-44-126-110-126z"/>
+          <g class="bill">
+            <path class="bill-shape" d="M118 192c-14 0-26 10-26 24 0 16 20 28 50 30h36c30-2 50-14 50-30 0-14-12-24-26-24-18 0-30 6-42 6s-24-6-42-6z"/>
+            <ellipse class="nostril" cx="164" cy="214" rx="5" ry="3"/>
+            <ellipse class="nostril" cx="192" cy="214" rx="5" ry="3"/>
+            <path class="bill-line" d="M104 226c22 10 48 14 74 14s52-4 74-14" fill="none"/>
+          </g>
+          <g class="eyes">
+            <ellipse class="eye" cx="148" cy="158" rx="9" ry="12"/>
+            <ellipse class="eye" cx="206" cy="158" rx="9" ry="12"/>
+            <circle class="spark" cx="151" cy="154" r="2.6"/>
+            <circle class="spark" cx="209" cy="154" r="2.6"/>
+          </g>
+          <path class="tail" d="M262 262c22-6 44 4 48 20 3 12-10 20-26 16-10-3-20-14-22-36z"/>
+          <g class="paw">
+            <rect class="paw-flash" x="232" y="212" width="44" height="14" rx="7"/>
+            <path class="paw-shape" d="M222 206c10-6 24-4 30 4 4 6 0 14-8 16-12 3-26-6-22-20z"/>
+          </g>
+        </svg>
+        <p class="ghost-caption">Настоящий утконос светится в ультрафиолете. Это научный факт, а не хэллоуинская байка.</p>
+      </div>
+    </section>
+
+    <!-- ======= Детали ======= -->
+    <section class="details" id="details">
+      <div class="card when reveal-on-scroll">
+        <p class="card-label">Когда</p>
+        <p class="card-big"><span class="num">31</span><span class="unit">октября</span></p>
+        <p class="card-sub" data-field="time">суббота · с 19:00</p>
+        <p class="countdown" id="countdown" aria-live="polite">
+          <span><b id="cd-d">00</b><i>дн</i></span>
+          <span><b id="cd-h">00</b><i>ч</i></span>
+          <span><b id="cd-m">00</b><i>мин</i></span>
+          <span><b id="cd-s">00</b><i>сек</i></span>
+        </p>
+      </div>
+      <div class="card where reveal-on-scroll">
+        <p class="card-label">Где</p>
+        <p class="card-big card-script glow" data-field="venue">в Точке</p>
+        <p class="card-sub" data-field="address">адрес и схема прохода — в календаре</p>
+        <a class="card-link" data-field="mapUrl" href="#" target="_blank" rel="noopener">Открыть карту →</a>
+      </div>
+      <div class="card dress reveal-on-scroll">
+        <p class="card-label">Дресс-код</p>
+        <p class="card-big card-script glow">всё, что воет</p>
+        <p class="card-sub">Костюм приветствуется, но утконос простит и худи. Главное — светиться.</p>
+      </div>
+      <div class="card rules reveal-on-scroll">
+        <p class="card-label">Правила ночи</p>
+        <ol class="rules-list">
+          <li><b>Свет гасим в 21:00</b> — ровно на 10 секунд. Увидишь, кто из коллег светится.</li>
+          <li><b>Фонарик из коробки</b> — свети на людей, стены и открытку. Там написано лишнее.</li>
+          <li><b>«Утро после»</b> не открывать до 1 ноября. Это приказ утконоса.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======= Коробка ======= -->
+    <section class="box" id="box">
+      <div class="box-head reveal-on-scroll">
+        <p class="eyebrow">На входе — коробка</p>
+        <h2>Welcome pack <span class="t-script glow">«Бизнесу выть!»</span></h2>
+        <p class="lead-sm">Днём — строгий фиолетовый мерч Точки. В темноте — светится. Десять предметов, два из них с секретом.</p>
+      </div>
+      <ul class="items">
+        <li class="item reveal-on-scroll" style="--d:.0s"><span class="item-n">01</span><span class="item-t">Коробка</span><span class="item-d">с утконосом, который светится</span></li>
+        <li class="item reveal-on-scroll" style="--d:.05s"><span class="item-n">02</span><span class="item-t">Фонарик</span><span class="item-d">ключ ко всем секретам</span></li>
+        <li class="item reveal-on-scroll" style="--d:.1s"><span class="item-n">03</span><span class="item-t">Плюш</span><span class="item-d">я утконос, не похож, зато светлый внутри</span></li>
+        <li class="item reveal-on-scroll glow-item" style="--d:.15s"><span class="item-n">04</span><span class="item-t">Значок</span><span class="item-d">фосфор · светится в темноте</span></li>
+        <li class="item reveal-on-scroll" style="--d:.2s"><span class="item-n">05</span><span class="item-t">Свеча</span><span class="item-d">«Запах сданной отчётности»</span></li>
+        <li class="item reveal-on-scroll" style="--d:.25s"><span class="item-n">06</span><span class="item-t">Стопка</span><span class="item-d">с гравировкой «Бизнесу выть!»</span></li>
+        <li class="item reveal-on-scroll" style="--d:.3s"><span class="item-n">07</span><span class="item-t">«Утро после»</span><span class="item-d">конверт заботы на 1 ноября</span></li>
+        <li class="item reveal-on-scroll" style="--d:.35s"><span class="item-n">08</span><span class="item-t">Тату</span><span class="item-d">«самозанятый вампир» и ещё пять</span></li>
+        <li class="item reveal-on-scroll glow-item" style="--d:.4s"><span class="item-n">09</span><span class="item-t">Стикеры</span><span class="item-d">два из шести светятся</span></li>
+        <li class="item reveal-on-scroll" style="--d:.45s"><span class="item-n">10</span><span class="item-t">Открытка</span><span class="item-d">с P.S., который виден не всем</span></li>
+      </ul>
+    </section>
+
+    <!-- ======= RSVP ======= -->
+    <section class="rsvp" id="rsvp">
+      <div class="rsvp-inner reveal-on-scroll">
+        <p class="eyebrow">Скажи, что придёшь</p>
+        <h2>Нам надо знать, <span class="t-script glow">сколько коробок</span> светить</h2>
+        <div class="rsvp-actions">
+          <a class="btn btn-primary" id="rsvp-yes" data-field="rsvpUrl" href="#" target="_blank" rel="noopener">Я приду выть</a>
+          <a class="btn btn-ghost" id="ics" href="#" download="tochka-halloween.ics">В календарь</a>
+        </div>
+        <p class="rsvp-note" id="rsvp-note">Ответ занимает 20 секунд. Фонарик выдаём на входе по имени.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-line"><span class="brand-word">точка</span><span class="brand-dot"></span> <span class="foot-sep">·</span> Бизнесу <s>быть</s> <span class="t-script glow">выть!</span></p>
+    <p class="foot-small">Внутреннее мероприятие для сотрудников. Если ты не из Точки и всё равно это читаешь — утконос уже знает.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
